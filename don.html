@@ -88,10 +88,13 @@ height: 50px;
 background-color: yellow;
 border: 1px solid #999;
 margin:0px;
+text-align: center;
+font-size: 35px;
 }
   #controls{
     padding: 10px;
     border-bottom:2px solid black;
+    text-align: center;
   }
   #fin{
     color:white;
@@ -102,6 +105,16 @@ margin:0px;
     margin:0px;
     padding:10px;
   }
+  input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+}
+
 
     </style>
   </head>
@@ -114,7 +127,7 @@ margin:0px;
 
         <div id="back">
       <div>
-        <ol>
+        <ul>
             <h2>동석이 list<h2><br>
           <li>동적 스트레칭</li>
           <li>스쿼트 3세트 10개</li>
@@ -125,7 +138,7 @@ margin:0px;
           <li>팔(삼두) 3세트 10개</li>
           <li>플랭크   1분</li>
           <li>스트레칭</li>
-        </ol>
+        </ul>
         </div>
         <div>
         <ul>
@@ -145,7 +158,7 @@ margin:0px;
 
         <p id="output"></p>
         <div id="controls">
-          <button id="startPause" onclick="startPause()">Start</button>
+          <button id="startPause" onclick="startPause()" style="">Start</button>
           <button onclick="reset()">Reset</button>
         </div>
         <div id="fin">
